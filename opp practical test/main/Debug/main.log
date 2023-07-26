@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\A\Desktop\opp practical test\main\main.cpp(30,14): warning C4018: '<': signed/unsigned mismatch
+C:\Users\A\Desktop\opp practical test\main\main.cpp(13,10): warning C4101: 'name': unreferenced local variable
+  main.vcxproj -> C:\Users\A\Desktop\opp practical test\main\Debug\main.exe
