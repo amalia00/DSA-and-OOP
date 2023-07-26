@@ -1,0 +1,24 @@
+﻿  FixedCapBiMap.cpp
+C:\Users\A\Documents\facultate\data structures alg. anul 1 semestrul 2\an2-restanta\Lab2DS\FixedCapBiMap.cpp(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\A\Documents\facultate\data structures alg. anul 1 semestrul 2\an2-restanta\Lab2DS\FixedCapBiMap.cpp(119,45): error C2440: '=': cannot convert from 'TElem' to '_Ty1'
+          with
+          [
+              _Ty1=TKey
+          ]
+C:\Users\A\Documents\facultate\data structures alg. anul 1 semestrul 2\an2-restanta\Lab2DS\FixedCapBiMap.cpp(119,45): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+C:\Users\A\Documents\facultate\data structures alg. anul 1 semestrul 2\an2-restanta\Lab2DS\FixedCapBiMap.cpp(120,3): error C2143: syntax error: missing ';' before 'this'
+C:\Users\A\Documents\facultate\data structures alg. anul 1 semestrul 2\an2-restanta\Lab2DS\FixedCapBiMap.cpp(123,48): error C2440: '=': cannot convert from 'TElem' to '_Ty2'
+          with
+          [
+              _Ty2=TValue
+          ]
+C:\Users\A\Documents\facultate\data structures alg. anul 1 semestrul 2\an2-restanta\Lab2DS\FixedCapBiMap.cpp(123,47): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+C:\Users\A\Documents\facultate\data structures alg. anul 1 semestrul 2\an2-restanta\Lab2DS\FixedCapBiMap.cpp(130,33): error C2601: 'FixedCapBiMap::size': local function definitions are illegal
+C:\Users\A\Documents\facultate\data structures alg. anul 1 semestrul 2\an2-restanta\Lab2DS\FixedCapBiMap.cpp(99): message : this line contains a '{' which has not yet been matched
+C:\Users\A\Documents\facultate\data structures alg. anul 1 semestrul 2\an2-restanta\Lab2DS\FixedCapBiMap.cpp(135,37): error C2601: 'FixedCapBiMap::isEmpty': local function definitions are illegal
+C:\Users\A\Documents\facultate\data structures alg. anul 1 semestrul 2\an2-restanta\Lab2DS\FixedCapBiMap.cpp(99): message : this line contains a '{' which has not yet been matched
+C:\Users\A\Documents\facultate\data structures alg. anul 1 semestrul 2\an2-restanta\Lab2DS\FixedCapBiMap.cpp(145,36): error C2601: 'FixedCapBiMap::isFull': local function definitions are illegal
+C:\Users\A\Documents\facultate\data structures alg. anul 1 semestrul 2\an2-restanta\Lab2DS\FixedCapBiMap.cpp(99): message : this line contains a '{' which has not yet been matched
+C:\Users\A\Documents\facultate\data structures alg. anul 1 semestrul 2\an2-restanta\Lab2DS\FixedCapBiMap.cpp(156,55): error C2601: 'FixedCapBiMap::iterator': local function definitions are illegal
+C:\Users\A\Documents\facultate\data structures alg. anul 1 semestrul 2\an2-restanta\Lab2DS\FixedCapBiMap.cpp(99): message : this line contains a '{' which has not yet been matched
+C:\Users\A\Documents\facultate\data structures alg. anul 1 semestrul 2\an2-restanta\Lab2DS\FixedCapBiMap.cpp(99): fatal error C1075: '{': no matching token found
