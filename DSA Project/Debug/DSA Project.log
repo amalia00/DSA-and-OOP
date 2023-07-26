@@ -1,0 +1,15 @@
+﻿  UI.cpp
+  TRelation.cpp
+  Tests.cpp
+c:\users\miruna\desktop\dsa project\dsa project\tests.cpp(54): warning C4101: 'e': unreferenced local variable
+c:\users\miruna\desktop\dsa project\dsa project\tests.cpp(159): warning C4101: 'e': unreferenced local variable
+  TComp.cpp
+  SortedSet.cpp
+  main.cpp
+  Controller.cpp
+  BSTNode.cpp
+  BSTIterator.cpp
+  BinarySearchTree.cpp
+  Generating Code...
+  DSA Project.vcxproj -> C:\Users\Miruna\Desktop\DSA Project\Debug\DSA Project.exe
+  DSA Project.vcxproj -> C:\Users\Miruna\Desktop\DSA Project\Debug\DSA Project.pdb (Full PDB)
