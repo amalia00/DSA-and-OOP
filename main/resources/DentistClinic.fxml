@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<TabPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClinicController">
+    <tabs>
+        <Tab text="Add Patient">
+            <content>
+                <GridPane alignment="CENTER" hgap="10.0" vgap="10.0">
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                    <Text fill="blue" text="Fill in a patients informations " textAlignment="CENTER" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="0" />
+                    <Label text="Name" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                    <TextField fx:id="Name" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                    <Label text="Address" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                    <TextField fx:id="Address" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                    <Label text="Phone number" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                    <TextField fx:id="Telephone" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                    <Label text="Age" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                    <TextField fx:id="Age" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                    <HBox alignment="BOTTOM_RIGHT" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="7">
+                        <children>
+                            <Button fx:id="addButton" onAction="#addPatientHandler" text="Add Patient">
+                                <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                </HBox.margin></Button>
+                            <Button onAction="#clearFieldsHandler" text="Clear fields" />
+                        </children>
+
+                    </HBox>
+                    <Text fx:id="requestID" fill="green" text="" textAlignment="CENTER" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="8" />
+
+                </GridPane>
+            </content>
+        </Tab>
+        <Tab text="Add Appointment">
+            <content>
+                <GridPane alignment="CENTER" hgap="10.0" vgap="10.0">
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+
+                    <Label text="Search Patient by Name" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                    <TextField fx:id="SearchName" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                    <Button fx:id="searchButton" onAction="#searchPatientHandler" text="Search..." GridPane.columnIndex="2" GridPane.rowIndex="0" />
+                    <Label text="Search results:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                    <TableView fx:id="patientResults" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1">
+                        <columns>
+                            <TableColumn text="ID">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="id"/>
+                                </cellValueFactory>
+                            </TableColumn>
+                            <TableColumn text="Name">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="Name"/>
+                                </cellValueFactory>
+                            </TableColumn>
+                            <TableColumn text="Address">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="Address"/>
+                                </cellValueFactory>
+                            </TableColumn>
+                            <TableColumn text="Age">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="Age"/>
+                                </cellValueFactory>
+                            </TableColumn>
+                        </columns>
+                        <columnResizePolicy>
+                            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                        </columnResizePolicy>
+                    </TableView>
+                    <Label text="Date" GridPane.columnIndex="0" GridPane.rowIndex="3" GridPane.rowSpan="2" />
+                    <TextField fx:id="Date" GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.rowSpan="2" />
+                    <Label text="Price " GridPane.columnIndex="0" GridPane.rowIndex="6" />
+                    <TextField fx:id="Price" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                    <Label text="Problem " GridPane.columnIndex="0" GridPane.rowIndex="7" />
+                    <TextField fx:id="Problem" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                    <HBox alignment="BOTTOM_RIGHT" GridPane.columnIndex="0" GridPane.columnSpan="3" GridPane.rowIndex="8">
+                        <children>
+                            <Button fx:id="AddAppointButton" onAction="#addAppointmentHandler" text="Add the appointment" />
+                            <Button fx:id="ClearFieldsButton" onAction="#clearAppointmentFields" text="Clear Fields" />
+                        </children>
+                    </HBox>
+                </GridPane>
+            </content>
+        </Tab>
+        <Tab text="Reports">
+            <content>
+                <GridPane alignment="CENTER" hgap="10.0" vgap="10.0">
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+
+                    <Label text="Search Appointments By: " GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                    <ChoiceBox fx:id="ChoiceBoxPick" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                    <Button fx:id="searchAppointmentButton" onAction="#SearchAppointmentsHandler" text="Show ..." GridPane.columnIndex="2" GridPane.rowIndex="0" />
+                    <Label text="Search results:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                    <TableView fx:id="appointmentResults" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1">
+                        <columns>
+                            <TableColumn text="ID">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="iD" />
+                                </cellValueFactory>
+                            </TableColumn>
+                            <TableColumn text="Date">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="Date" />
+                                </cellValueFactory>
+                            </TableColumn>
+                            <TableColumn text="Problem">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="Problem" />
+                                </cellValueFactory>
+                            </TableColumn>
+                            <TableColumn text="Price">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="Price" />
+                                </cellValueFactory>
+                            </TableColumn>
+                        </columns>
+                        <columnResizePolicy>
+                            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                        </columnResizePolicy>
+                    </TableView>
+
+                </GridPane>
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>
